@@ -1,11 +1,17 @@
 package com.mobile.w07_filetest
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 import com.mobile.w07_filetest.databinding.ActivityMainBinding
 import java.io.BufferedReader
 import java.io.File
@@ -80,5 +86,28 @@ class MainActivity : AppCompatActivity() {
             // 폴더를 지우면?
         }
 
+        binding.btnImage.setOnClickListener {
+            val url = "https://cdn.dailyvet.co.kr/wp-content/uploads/2024/05/15231647/20240515ceva_experts4.jpg"
+
+            Glide.with(this)
+                .asBitmap()
+                .load(url)
+//                .into(binding.imageView)
+                .into( object: CustomTarget<Bitmap>(350, 350) {
+                    override fun onResourceReady(
+                        resource: Bitmap,
+                        transition: Transition<in Bitmap>?,
+                    ) {
+                        val imageFile = File("${filesDir}/images", "image.jpg")
+                        val fos = FileOutputStream(imageFile)
+                        resource.compress(Bitmap.CompressFormat.JPEG, 100, fos)
+                        fos.close()
+                    }
+
+                    override fun onLoadCleared(placeholder: Drawable?) {
+                        binding.textView.setText("Image load cleared!")
+                    }
+                })
+        }
     }
 }

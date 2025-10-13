@@ -65,16 +65,15 @@ class MainActivity : AppCompatActivity() {
         adapter.setOnItemClickListener(object : BookAdapter.OnItemClickListener {
             override fun onItemClick(view: View, position: Int) {
                 val book = adapter.items?.get(position) as Book
-//                Glide.with(this@MainActivity)
-//                    .load(book.image)
-//                    .placeholder(R.drawable.ic_launcher_foreground)
-//                    .into(binding.imageView)
+                Glide.with(this@MainActivity)
+                    .load(book.image)
+                    .placeholder(R.drawable.ic_launcher_foreground)
+                    .into(binding.imageView)
                 // DetailActivity 실행
-                // Extra필드에 book dto 전달
+                // Extra필드에 book DTO 전달
                 val intent = Intent(this@MainActivity, DetailActivity::class.java)
                 intent.putExtra("book", book)
                 startActivity(intent)
-
             }
         })
     }
