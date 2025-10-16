@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("utf-8"); %>
-<%@ page import="java.io.*, java.util.*" %>
+<%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,7 +40,7 @@ for (String name: names) {
 		out.println(name + ": ");
 		String[] result = request.getParameterValues(name);
 		for (String item: result) {
-			out.println(item + "/");
+			out.print(item + "/");
 		}
 		out.println("<br>");
 	}
@@ -56,10 +56,18 @@ for (String name: names) {
 		out.println(name + ": ");
 		String[] result = request.getParameterValues(name);
 		for (String item: result) {
-			int pos = parseInt(item);
-			out.println(hobbyNames[pos] + "/");
+			int pos = Integer.parseInt(item);
+			out.print(hobbyNames[pos] + "/");
 		}
 		out.println("<br>");
+	}
+	else if (name.equals("gender")) {
+		int index = Integer.parseInt(request.getParameter(name));
+		out.println(name + ": " + gNames[index] + "<br>");
+	}
+	else if (name.equals("phone1")) {
+		int index = Integer.parseInt(request.getParameter(name));
+		out.println(name + ": " + telCompany[index] + "<br>");
 	}
 	else {
 		out.println(name + ": " + request.getParameter(name) + "<br>");
