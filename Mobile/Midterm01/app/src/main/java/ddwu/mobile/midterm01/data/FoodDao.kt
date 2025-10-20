@@ -5,30 +5,31 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface FoodDao {
     @Insert
-    fun insertFood(vararg food: Food)
+    suspend fun insertFood(vararg food: Food)
 
     @Update
-    fun updateFood(food: Food)
+    suspend fun updateFood(food: Food)
 
     @Delete
-    fun deleteFood(food: Food)
+    suspend fun deleteFood(food: Food)
 
     @Query("SELECT * FROM food_table")
-    fun getAllFoods() : List<Food>
+    fun getAllFoods() : Flow<List<Food>>
 
     @Query("SELECT * FROM food_table WHERE _id = :id")
-    fun getFood(id: Int) : Food
+    suspend fun getFood(id: Int) : Food
 
     @Query("SELECT * FROM food_table WHERE food_name IN (:names)")
-    fun getFoodsByName(names: List<String>) : List<Food>
+    suspend fun getFoodsByName(names: List<String>) : List<Food>
 
     @Query("DELETE FROM food_table WHERE _id = :id")
-    fun deleteFoodById(id: Int)
+    suspend fun deleteFoodById(id: Int)
 
-    @Query("DELETE FROM food_table WHERE _id = :id")
-    fun hello(id: Int)
+    @Query("UPDATE food_table SET food_price = :price WHERE food_name = :name")
+    suspend fun updateFoodByName(name: String, price: Int)
 }

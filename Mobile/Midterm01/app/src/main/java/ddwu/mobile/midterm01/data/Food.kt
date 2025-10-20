@@ -12,4 +12,6 @@ data class Food(
     @ColumnInfo(name = "food_price") var price: Int?,
 ) {
     @Ignore var count: Int = 0
+
+    override fun toString() = "$food($_id): ${price}원"
 }
