@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BD1E7AE-EE40-46A9-8B83-DBCAE38C9478}|Stack_array\\Stack_array.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_array\\Stack_array.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6BD1E7AE-EE40-46A9-8B83-DBCAE38C9478}|Stack_array\\Stack_array.vcxproj|solutionrelative:Stack_array\\Stack_array.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A538F01-5E33-4E3F-9E57-7B58F76B2B80}|Stack_infix2postfix\\Stack_infix2postfix.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_infix2postfix\\Infix2Postfix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A538F01-5E33-4E3F-9E57-7B58F76B2B80}|Stack_infix2postfix\\Stack_infix2postfix.vcxproj|solutionrelative:Stack_infix2postfix\\Infix2Postfix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E3620C-0772-4002-8CF6-26F6FCB7BD07}|Stack_palindrome\\Stack_palindrome.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_palindrome\\Palindrome.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9E3620C-0772-4002-8CF6-26F6FCB7BD07}|Stack_palindrome\\Stack_palindrome.vcxproj|solutionrelative:Stack_palindrome\\Palindrome.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BD1E7AE-EE40-46A9-8B83-DBCAE38C9478}|Stack_array\\Stack_array.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_array\\Stack_array.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6BD1E7AE-EE40-46A9-8B83-DBCAE38C9478}|Stack_array\\Stack_array.vcxproj|solutionrelative:Stack_array\\Stack_array.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Infix2Postfix.c",
               "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_infix2postfix\\Infix2Postfix.c",
               "RelativeDocumentMoniker": "Stack_infix2postfix\\Infix2Postfix.c",
               "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_infix2postfix\\Infix2Postfix.c",
               "RelativeToolTip": "Stack_infix2postfix\\Infix2Postfix.c",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-10-20T12:03:08.979Z",
+              "WhenOpened": "2025-10-21T08:07:02.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Stack_array.c",
               "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_array\\Stack_array.c",
               "RelativeDocumentMoniker": "Stack_array\\Stack_array.c",
               "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_array\\Stack_array.c",
               "RelativeToolTip": "Stack_array\\Stack_array.c",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwDAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-10-20T11:48:20.494Z",
+              "WhenOpened": "2025-10-21T06:05:11.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Palindrome.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_palindrome\\Palindrome.c",
+              "RelativeDocumentMoniker": "Stack_palindrome\\Palindrome.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Midterm\\Stack_palindrome\\Palindrome.c",
+              "RelativeToolTip": "Stack_palindrome\\Palindrome.c",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwDoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T06:05:06.698Z",
               "EditorCaption": ""
             }
           ]
