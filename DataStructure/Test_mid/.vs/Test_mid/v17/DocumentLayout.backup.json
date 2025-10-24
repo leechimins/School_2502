@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA80EC4-81F5-47B6-8DC3-E99FD013C58F}|T07\\T07.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T07\\T07.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BA80EC4-81F5-47B6-8DC3-E99FD013C58F}|T07\\T07.vcxproj|solutionrelative:T07\\T07.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AF2EBC-30CD-4A65-B05F-7285826D2707}|T01\\T01.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T01\\T01.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6AF2EBC-30CD-4A65-B05F-7285826D2707}|T01\\T01.vcxproj|solutionrelative:T01\\T01.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B21867CD-5EB0-48E4-B456-BC36FBD89D4A}|T05\\T05.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T05\\T05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B21867CD-5EB0-48E4-B456-BC36FBD89D4A}|T05\\T05.vcxproj|solutionrelative:T05\\T05.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C57083CD-F98F-4150-B7AC-439BBA76BEFF}|T06\\T06.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T06\\T06.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C57083CD-F98F-4150-B7AC-439BBA76BEFF}|T06\\T06.vcxproj|solutionrelative:T06\\T06.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD34F0C5-1CE8-4765-893C-77F00194F905}|T04\\T04.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T04\\T04.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD34F0C5-1CE8-4765-893C-77F00194F905}|T04\\T04.vcxproj|solutionrelative:T04\\T04.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9974EFFD-C3DF-47FE-87DD-90BA5C51848B}|T03\\T03.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T03\\T03.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9974EFFD-C3DF-47FE-87DD-90BA5C51848B}|T03\\T03.vcxproj|solutionrelative:T03\\T03.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E9C2F0-C54F-40A2-A0A7-31D0336245CD}|T02\\T02.vcxproj|D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T02\\T02.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{25E9C2F0-C54F-40A2-A0A7-31D0336245CD}|T02\\T02.vcxproj|solutionrelative:T02\\T02.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "T07.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T07\\T07.c",
+              "RelativeDocumentMoniker": "T07\\T07.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T07\\T07.c",
+              "RelativeToolTip": "T07\\T07.c",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T10:41:46.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "T06.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T06\\T06.c",
+              "RelativeDocumentMoniker": "T06\\T06.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T06\\T06.c",
+              "RelativeToolTip": "T06\\T06.c",
+              "ViewState": "AgIAADMAAAAAAAAAAAAkwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T10:27:31.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "T05.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T05\\T05.c",
+              "RelativeDocumentMoniker": "T05\\T05.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T05\\T05.c",
+              "RelativeToolTip": "T05\\T05.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T10:12:47.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "T04.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T04\\T04.c",
+              "RelativeDocumentMoniker": "T04\\T04.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T04\\T04.c",
+              "RelativeToolTip": "T04\\T04.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T09:55:48.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "T03.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T03\\T03.c",
+              "RelativeDocumentMoniker": "T03\\T03.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T03\\T03.c",
+              "RelativeToolTip": "T03\\T03.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T09:47:41.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "T02.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T02\\T02.c",
+              "RelativeDocumentMoniker": "T02\\T02.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T02\\T02.c",
+              "RelativeToolTip": "T02\\T02.c",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwCUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T09:43:12.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "T01.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T01\\T01.c",
+              "RelativeDocumentMoniker": "T01\\T01.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\School_2502\\DataStructure\\Test_mid\\T01\\T01.c",
+              "RelativeToolTip": "T01\\T01.c",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwCcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-10-21T09:34:52.978Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
