@@ -1,6 +1,5 @@
 package ddwu.com.mobile.naverretrofittest
 
-import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -34,9 +33,9 @@ class DetailActivity : AppCompatActivity() {
         }
 
         val data = intent.getSerializableExtra("book") as Book
+        val fileName = getCurrentTime()
 
         Glide.with(this)
-            .asBitmap()
             .load(data.image)
             .into(binding.imageView2)
 
@@ -44,12 +43,16 @@ class DetailActivity : AppCompatActivity() {
             Glide.with(this)
                 .asBitmap()
                 .load(data.image)
-                .into(object: CustomTarget<Bitmap>(480, 480) {
+                .into(object: CustomTarget<Bitmap>(300, 300) {
                     override fun onResourceReady(
                         resource: Bitmap,
                         transition: Transition<in Bitmap>?,
                     ) {
-                        val imageFile = File("${filesDir}/images", "${getCurrentTime()}.jpg")
+                        val subDir = File(filesDir, "images")
+                        if (!subDir.exists()) {
+                            subDir.mkdir()
+                        }
+                        val imageFile = File("${filesDir}/images", "${fileName}.jpg")
                         val fos = FileOutputStream(imageFile)
                         resource.compress(Bitmap.CompressFormat.JPEG, 100, fos)
                         fos.close()
@@ -61,9 +64,15 @@ class DetailActivity : AppCompatActivity() {
                 })
         }
 
+        binding.btnClose.setOnClickListener {
+            val dir = File(filesDir, "images")
+            dir.listFiles()?.forEach { file ->
+                file.delete()
+            }
+            finish()
+        }
+
     }
 
-    fun getCurrentTime(): String {
-        return SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-    }
+    fun getCurrentTime() = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
 }
