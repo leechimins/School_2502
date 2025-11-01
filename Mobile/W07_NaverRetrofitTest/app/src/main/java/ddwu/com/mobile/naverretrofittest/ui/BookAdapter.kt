@@ -1,4 +1,4 @@
-package ddwu.com.mobile.naverretrofittest
+package ddwu.com.mobile.naverretrofittest.ui
 
 import android.view.LayoutInflater
 import android.view.View

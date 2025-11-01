@@ -13,6 +13,7 @@ import ddwu.com.mobile.naverretrofittest.data.Book
 import ddwu.com.mobile.naverretrofittest.data.Root
 import ddwu.com.mobile.naverretrofittest.databinding.ActivityMainBinding
 import ddwu.com.mobile.naverretrofittest.network.IBookSearchService
+import ddwu.com.mobile.naverretrofittest.ui.BookAdapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
