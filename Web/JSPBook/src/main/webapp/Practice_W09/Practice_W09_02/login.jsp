@@ -8,9 +8,9 @@
 </head>
 <body>
 <form name="addr" action="control.jsp" method="post">
-	아이디: <input type="text" name="id" /><br>
-	패스워드: <input type="text" name="passwd" /><br>
-<input type="submit" value="로그인" />
+	아이디: <input type="text" name="id" />
+	패스워드: <input type="text" name="passwd" />
+	<input type="submit" value="로그인" />
 </form>
 </body>
 </html>

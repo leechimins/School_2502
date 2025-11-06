@@ -3,6 +3,7 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.util.Calendar" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,70 +28,77 @@
 	</style>
 </head>
 <body>
-	<%@page import="java.util.Calendar" %>
-	<%!
-	Calendar cal = Calendar.getInstance();
-	String[] days = { "None", "일", "월", "화", "수", "목", "금", "토" };
-	int year, month, date, start, end, startDay, count = 0;
-	%>
-	
+
+<%!
+Calendar cal;
+String[] days = { "None", "일", "월", "화", "수", "목", "금", "토" };
+int year, month, date, start, end, startDay, count, today;
+%>
+
+<%
+cal = Calendar.getInstance();
+
+// 오늘 날짜
+year = cal.get(Calendar.YEAR);
+month = cal.get(Calendar.MONTH);
+date = cal.get(Calendar.DATE);
+
+cal.set(year, month, 1);
+
+// 시작 요일, 시작 날짜, 끝 날짜
+startDay = cal.get(Calendar.DAY_OF_WEEK);
+start = cal.getMinimum(Calendar.DATE);
+end = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+
+count = 0;
+today = start;
+%>
+
+<h2><%=year %>년 <%=month + 1 %>월 <%=date %>일</h2>
+<hr>
+
+<table>
+<tr>
 	<%
-	year = cal.get(Calendar.YEAR);
-	month = cal.get(Calendar.MONTH);
-	date = cal.get(Calendar.DATE);
-	
-	cal.set(year, month, 1);
-	
-	startDay = cal.get(Calendar.DAY_OF_WEEK);
-	start = cal.getMinimum(Calendar.DATE);
-	end = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+	out.println("<td class='sun'>일</td>");
+	for (int i = 2; i < 7; i++)
+		out.print("<td>" + days[i] + "</td>");
+	out.println("<td class='sat'>토</td>");
 	%>
-	
-	<h2><%=year %>년 <%=month + 1 %>월 <%=date %>일</h2>
-	<hr>
-	
-	<table>
-	<tr>
-		<%
-		out.println("<td class='sun'>일</td>");
-		for (int i = 2; i < 7; i++) {
-			out.print("<td>");
-			out.print(days[i]);
-			out.println("</td>");
-		}
-		out.println("<td class='sat'>토</td>");
-		%>
-	</tr>
-	<%
-	// 첫 주 (공백 + 날짜)
-	out.println("<tr>");
-	for (int i = 1; i < startDay; i++, count++)
-		out.println("<td>&nbsp;</td>");
-	for (date = start; count < 7; count++, date++) {
-		if (count % 7 == 0)
-			out.println("<td class='sun'>" + date + "</td>");
-		else if (count % 7 == 6)
-			out.println("<td class='sat'>" + date + "</td>");
-		else
-			out.println("<td>" + date + "</td>");
-	}
-	out.println("</tr>");
-	
-	// 중간 주 ~ 마지막 주 (날짜만)
-	for (; date <= end; date++, count++) {
-		if (count % 7 == 0)
-			out.println("<tr><td class='sun'>" + date + "</td>");
-		else if (count % 7 == 6)
-			out.println("<td class='sat'>" + date + "</td></tr>");
-		else
-			out.println("<td>" + date + "</td>");
-	}
-	
-	// 마지막 주 (공백만)
-	for (; count % 7 != 6; count++)
+</tr>
+<%
+// 첫 주 (공백 + 날짜)
+out.println("<tr>");
+for (int i = 1; i < startDay; i++, count++)
+	out.println("<td>&nbsp;</td>");
+for (; count < 7; count++, today++) {
+	if (count % 7 == 0)
+		out.println("<td class='sun'>" + today + "</td>");
+	else if (count % 7 == 6)
+		out.println("<td class='sat'>" + today + "</td>");
+	else
+		out.println("<td>" + today + "</td>");
+}
+out.println("</tr>");
+
+// 중간 주 ~ 마지막 주 (날짜만)
+for (; today <= end; count++, today++) {
+	if (count % 7 == 0)
+		out.println("<tr><td class='sun'>" + today + "</td>");
+	else if (count % 7 == 6)
+		out.println("<td class='sat'>" + today + "</td></tr>");
+	else
+		out.println("<td>" + today + "</td>");
+}
+
+// 마지막 주 (공백만)
+if (count % 7 != 0) {
+	for (; count % 7 != 0; count++)
 		out.println("<td>&nbsp;</td>");
 	out.println("</tr>");
-	%>
-	</table>
+}
+%>
+</table>
+
 </body>
 </html>

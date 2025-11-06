@@ -8,6 +8,8 @@
 <style>
 	table, td {
 		border: 1px solid black;
+		margin-left:auto;
+		margin-right:auto;
 	}
 </style>
 </head>
