@@ -1,0 +1,8 @@
+﻿  HW5_1.c
+D:\School\School_2502_Git\DataStructure\Week09\HW5_1\HW5_1.c(157,47): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+      D:\School\School_2502_Git\DataStructure\Week09\HW5_1\HW5_1.c(157,47):
+      자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+D:\School\School_2502_Git\DataStructure\Week09\HW5_1\HW5_1.c(138,14): warning C4101: 'e5' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Week09\HW5_1\HW5_1.c(138,18): warning C4101: 'e6' :참조되지 않은 지역 변수입니다.
+  HW5_1.vcxproj -> D:\School\School_2502_Git\DataStructure\Week09\x64\Debug\HW5_1.exe
