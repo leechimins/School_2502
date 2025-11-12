@@ -46,8 +46,8 @@ class MainActivity : AppCompatActivity() {
 
         checkPermissions()
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-        locationRequest = LocationRequest.Builder(10000)
-            .setMinUpdateIntervalMillis(3000)
+        locationRequest = LocationRequest.Builder(3000)
+            .setMinUpdateIntervalMillis(5000)
             .setPriority(Priority.PRIORITY_BALANCED_POWER_ACCURACY)
             .build()
         locationCallback = object : LocationCallback() {

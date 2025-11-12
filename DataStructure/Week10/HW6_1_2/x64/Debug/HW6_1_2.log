@@ -1,0 +1,4 @@
+﻿  HW6_1_2.c
+D:\School\School_2502_Git\DataStructure\Week10\HW6_1_2\HW6_1_2.c(83,16): warning C4101: 'node' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Week10\HW6_1_2\HW6_1_2.c(96,16): warning C4101: 'node' :참조되지 않은 지역 변수입니다.
+  HW6_1_2.vcxproj -> D:\School\School_2502_Git\DataStructure\Week10\x64\Debug\HW6_1_2.exe
