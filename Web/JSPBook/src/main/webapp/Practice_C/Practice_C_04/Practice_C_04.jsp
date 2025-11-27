@@ -83,7 +83,7 @@ nowDate = start;
 	</td>
 	<td style="border:none;">
 		<%
-		if (month <= 1)
+		if (month < 1)
 			out.println("<a>◀</a>");
 		else
 			out.println("<a href='Practice_C_04.jsp?YEAR=" + year + "&MONTH=" + (month-1) + "'>◀</a>");
@@ -91,7 +91,7 @@ nowDate = start;
 		<%=month + 1 %>월
 		
 		<%
-		if (month >= 12)
+		if (month >= 11)
 			out.println("<a>▶</a>");
 		else
 			out.println("<a href='Practice_C_04.jsp?YEAR=" + year + "&MONTH=" + (month+1) + "'>▶</a>");
