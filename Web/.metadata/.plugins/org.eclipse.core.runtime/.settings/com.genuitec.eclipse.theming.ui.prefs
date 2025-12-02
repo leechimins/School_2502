@@ -4,7 +4,12 @@ configurationInstallLocation=/C\:/Users/leech/eclipse/jee-2025-03/eclipse/
 eclipse.preferences.version=1
 iconcolormode=pastel
 includeThemingInOomph=false
+<<<<<<< HEAD
 last.download.attempt.time=1764638734107
 lastConfiguration=1764638721191
+=======
+last.download.attempt.time=1764401689143
+lastConfiguration=1764401682877
+>>>>>>> main
 newinstall=true
 workbench.theme=Light Gray
