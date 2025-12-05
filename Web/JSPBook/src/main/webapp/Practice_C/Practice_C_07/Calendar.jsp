@@ -173,5 +173,15 @@ while (count++ % 7 != 1) {
 </form>
 </div>
 
+<%
+for (String target: dmap.keySet()) {
+	String task = dmap.get(target);
+	if (target.indexOf(yearMonth) >= 0) {
+		out.println("<li>" + target + " : " + task + "</li>");
+	}
+}
+%>
+</ul>
+
 </body>
 </html>

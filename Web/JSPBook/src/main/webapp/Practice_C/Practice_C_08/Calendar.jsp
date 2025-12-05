@@ -33,6 +33,9 @@ td, th {
 </head>
 <body>
 
+<jsp:useBean id="myDate" class="jspbook.w16.Date" scope="session" />
+<jsp:useBean id="scheduler" class="jspbook.w16.Scheduler" scope="session" />
+
 <%!
 String[] week = new String[] { "", "일", "월", "화", "수", "목", "금", "토" };
 
@@ -82,12 +85,8 @@ startDayOfWeek = calcCal.get(Calendar.DAY_OF_WEEK);
 int count = 0;	// 7일마다 줄 바꿔주는 용
 int day = 0;	// 달력에 날짜 쓰는 용
 
-// session에 diary map 저장
-HashMap<String, String> dmap = (HashMap<String, String>)session.getAttribute("diary");
-if (dmap == null) {
-    dmap = new HashMap<String, String>();
-    session.setAttribute("diary", dmap);
-}
+// 일정
+ArrayList<String> schedule = scheduler.scheduleOfMonth(year, month);
 %>
 
 <table style="width: 100%;">
@@ -137,23 +136,17 @@ for (count = 1; count < startDayOfWeek; count++) {
 }
 // 날짜
 for (day = 1; day <= lastDate; day++, count++) {
-	String diary = String.format("%d<br>", day);
-	String task = dmap.get(String.format("%d-%02d-%02d", year, month, day));
-	if (task != null)
-		diary += task;
-	else
-		diary += "&nbsp;";
 	
 	if (count % 7 == 1) {
 		out.println("<tr>");
-		out.println("<td class='sun'>" + diary + "</td>");
+		out.println("<td class='sun'>" + day + "<br>" + schedule.get(day) + "</td>");
 	}
 	else if (count % 7 == 0) {
-		out.println("<td class='sat'>" + diary + "</td>");		
+		out.println("<td class='sat'>" + day + "<br>" + schedule.get(day) + "</td>");		
 		out.println("</tr>");
 	}
 	else {
-		out.println("<td>" + diary + "</td>");
+		out.println("<td>" + day + "<br>" + schedule.get(day) + "</td>");
 	}
 }
 // 마지막 주 빈칸
