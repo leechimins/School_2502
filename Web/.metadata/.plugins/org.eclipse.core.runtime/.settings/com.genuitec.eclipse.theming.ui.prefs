@@ -1,15 +1,13 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=main
 applyBackground=false
 approved.defs.file.last.changed.time=1693315978000
 configurationInstallLocation=/C\:/Users/leech/eclipse/jee-2025-03/eclipse/
 eclipse.preferences.version=1
 iconcolormode=pastel
 includeThemingInOomph=false
-<<<<<<< HEAD
-last.download.attempt.time=1764638734107
-lastConfiguration=1764638721191
-=======
-last.download.attempt.time=1764401689143
-lastConfiguration=1764401682877
->>>>>>> main
+last.download.attempt.time=1764907533044
+lastConfiguration=1764907526995
 newinstall=true
 workbench.theme=Light Gray
