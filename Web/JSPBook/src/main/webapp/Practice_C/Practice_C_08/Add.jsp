@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<jsp:useBean id="myDate" class="jspbook.w16.Date" scope="session" />
+<jsp:useBean id="myDate" class="jspbook.w16.Date" />
 <jsp:useBean id="scheduler" class="jspbook.w16.Scheduler" scope="session" />
 
 <%

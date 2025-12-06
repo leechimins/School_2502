@@ -24,7 +24,7 @@ public class Scheduler {
 			myDate.setDate(String.format("%d-%02d-%02d", year, month, day));
 			String task = this.diary.get(myDate);
 			if (task == null)
-				task = "&nbsp";
+				task = "&nbsp;";
 			schedule.add(task);
 		}
 		
