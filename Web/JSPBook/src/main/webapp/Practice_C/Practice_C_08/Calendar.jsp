@@ -12,7 +12,7 @@
 <title>웹프로그래밍 기말 과제</title>
 <style>
 .cal {
-	width: 80%;
+	width: 90%;
 	margin:auto;
 	border-collapse: collapse;
 	border: 1px solid black;
@@ -33,7 +33,6 @@ td, th {
 </head>
 <body>
 
-<jsp:useBean id="myDate" class="jspbook.w16.Date" scope="session" />
 <jsp:useBean id="scheduler" class="jspbook.w16.Scheduler" scope="session" />
 
 <%!
@@ -161,7 +160,7 @@ while (count++ % 7 != 1) {
 <div style="text-align:center; margin:10px">
 <form name="diary" action="Add.jsp" method="post">
 날짜: <input type="date" name="date" style="margin-right: 15px;" />
-일정: <input type="text" name="task" size="70" />
+일정: <input type="text" name="task" size="50" />
 <input type="submit" value="일정 등록" />
 </form>
 </div>
