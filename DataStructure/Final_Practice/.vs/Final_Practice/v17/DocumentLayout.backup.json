@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\",
+  "WorkspaceRootPath": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9169359-BD20-42E3-BFEE-FB9BD05B4157}|W09_HuffmanCode\\W09_HuffmanCode.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W09_HuffmanCode\\HuffmanCode.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F9169359-BD20-42E3-BFEE-FB9BD05B4157}|W09_HuffmanCode\\W09_HuffmanCode.vcxproj|solutionrelative:W09_HuffmanCode\\HuffmanCode.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ABADF3CD-41E9-4221-8B56-372C30CE8018}|W10_Graph_List\\W10_Graph_List.vcxproj|D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ABADF3CD-41E9-4221-8B56-372C30CE8018}|W10_Graph_List\\W10_Graph_List.vcxproj|solutionrelative:W10_Graph_List\\Graph_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|solutionrelative:W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HuffmanCode.c",
-              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W09_HuffmanCode\\HuffmanCode.c",
-              "RelativeDocumentMoniker": "W09_HuffmanCode\\HuffmanCode.c",
-              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W09_HuffmanCode\\HuffmanCode.c",
-              "RelativeToolTip": "W09_HuffmanCode\\HuffmanCode.c",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAATAAAAAAAAAA==",
+              "Title": "Graph_List.c",
+              "DocumentMoniker": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c",
+              "RelativeDocumentMoniker": "W10_Graph_List\\Graph_List.c",
+              "ToolTip": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c",
+              "RelativeToolTip": "W10_Graph_List\\Graph_List.c",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAywGAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-07T08:35:05.071Z",
+              "WhenOpened": "2025-12-07T13:59:39.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DFS_Matrix.c",
+              "DocumentMoniker": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
+              "RelativeDocumentMoniker": "W10_DFS_Matrix\\DFS_Matrix.c",
+              "ToolTip": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
+              "RelativeToolTip": "W10_DFS_Matrix\\DFS_Matrix.c",
+              "ViewState": "AgIAADwAAAAAAAAAAAAxwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-07T13:26:12.575Z",
               "EditorCaption": ""
             }
           ]
