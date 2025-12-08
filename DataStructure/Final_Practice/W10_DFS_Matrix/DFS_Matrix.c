@@ -3,6 +3,9 @@
 #include <stdlib.h>
 
 #define MAX 50
+#define TRUE 1
+#define FALSE 0
+int visited[MAX];
 
 typedef struct {
 	int n;
@@ -80,7 +83,8 @@ void write_graph(GraphType* g, char* filename) {
 			if (g->adj_mat[i][j])
 				fprintf(fp, "%d %d\n", i, j);
 
-	fclose(fp);
+	if (filename != NULL)
+		fclose(fp);
 }
 
 void print_adj_mat(GraphType* g) {
@@ -92,12 +96,12 @@ void print_adj_mat(GraphType* g) {
 }
 
 void dfs_mat(GraphType* g, int v) {
-	//visited[v] = TRUE;
-	printf("정점 %d -> ", v);
+	visited[v] = TRUE;
 	for (int w = 0; w < g->n; w++)
-		//if (g->adj_mat[v][w] && !visited[w])
-			//dfs_mat(g, w);
-		printf("임시");
+		if (g->adj_mat[v][w] && !visited[w]) {
+			printf("(%d, %d)\n", v, w);
+			dfs_mat(g, w);
+		}
 }
 
 int main(void) {
@@ -108,6 +112,10 @@ int main(void) {
 
 	print_adj_mat(g);
 	write_graph(g, NULL);
+
+	printf("\n깊이 우선 탐색(DFS)\n");
+	dfs_mat(g, 2);
+	printf("\n");
 
 	free(g);
 	return 0;
