@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\",
+  "WorkspaceRootPath": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABADF3CD-41E9-4221-8B56-372C30CE8018}|W10_Graph_List\\W10_Graph_List.vcxproj|D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ABADF3CD-41E9-4221-8B56-372C30CE8018}|W10_Graph_List\\W10_Graph_List.vcxproj|solutionrelative:W10_Graph_List\\Graph_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DC13D18A-59FF-4B99-9D6D-16FB8D92C5AF}|W10_DFS_List\\W10_DFS_List.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DC13D18A-59FF-4B99-9D6D-16FB8D92C5AF}|W10_DFS_List\\W10_DFS_List.vcxproj|solutionrelative:W10_DFS_List\\DFS_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|solutionrelative:W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|solutionrelative:W10_DFS_Iterative\\DFS_Iterative.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Graph_List.c",
-              "DocumentMoniker": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c",
-              "RelativeDocumentMoniker": "W10_Graph_List\\Graph_List.c",
-              "ToolTip": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_Graph_List\\Graph_List.c",
-              "RelativeToolTip": "W10_Graph_List\\Graph_List.c",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAywG4AAAAUAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DFS_Iterative.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c",
+              "RelativeDocumentMoniker": "W10_DFS_Iterative\\DFS_Iterative.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c",
+              "RelativeToolTip": "W10_DFS_Iterative\\DFS_Iterative.c",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwJEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-07T13:59:39.43Z",
+              "WhenOpened": "2025-12-08T13:11:24.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DFS_List.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
+              "RelativeDocumentMoniker": "W10_DFS_List\\DFS_List.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
+              "RelativeToolTip": "W10_DFS_List\\DFS_List.c",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAH4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-08T13:04:53.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "DFS_Matrix.c",
-              "DocumentMoniker": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
               "RelativeDocumentMoniker": "W10_DFS_Matrix\\DFS_Matrix.c",
-              "ToolTip": "D:\\School\\S25_2_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
               "RelativeToolTip": "W10_DFS_Matrix\\DFS_Matrix.c",
-              "ViewState": "AgIAADwAAAAAAAAAAAAxwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-07T13:26:12.575Z",
+              "WhenOpened": "2025-12-08T12:51:57.479Z",
               "EditorCaption": ""
             }
           ]
