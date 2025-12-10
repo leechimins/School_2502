@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 50
 #define TRUE 1
 #define FALSE 0
+
+#define MAX 50
+
 int visited[MAX];
 
 typedef struct GraphNode {
@@ -44,6 +46,29 @@ void insert_edge(GraphType* g, int u, int v) {
 	node->vertex = v;
 	node->link = g->adj_list[u];
 	g->adj_list[u] = node;
+
+	node = (GraphNode*)malloc(sizeof(GraphNode));
+	node->vertex = u;
+	node->link = g->adj_list[v];
+	g->adj_list[v] = node;
+}
+
+void delete_one_edge(GraphType* g, int s, int e) {
+	GraphNode* node = g->adj_list[s];
+	GraphNode* pre = NULL;
+
+	while (node != NULL) {
+		if (node->vertex == e) {
+			if (pre == NULL)
+				g->adj_list[s] = node->link;
+			else
+				pre->link = node->link;
+			free(node);
+			return;
+		}
+		pre = node;
+		node = node->link;
+	}
 }
 
 void delete_edge(GraphType* g, int u, int v) {
@@ -52,16 +77,8 @@ void delete_edge(GraphType* g, int u, int v) {
 		return;
 	}
 
-	GraphNode* node = g->adj_list[u];
-	while (node->link != NULL) {
-		if (node->link->vertex == v) {
-			GraphNode* temp = node->link;
-			node->link = temp->link;
-			free(temp);
-			break;
-		}
-		node = node->link;
-	}
+	delete_one_edge(g, u, v);
+	delete_one_edge(g, v, u);
 }
 
 void read_graph(GraphType* g, char* filename) {
@@ -138,9 +155,7 @@ int main(void) {
 	print_adj_mat(g);
 	write_graph(g, NULL);
 
-	printf("\n±íÀÌ ¿ì¼± Å½»ö(DFS)\n");
 	dfs_list(g, 0);
-	printf("\n");
 
 	free(g);
 	return 0;

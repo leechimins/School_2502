@@ -1,0 +1,5 @@
+﻿  P03.c
+D:\School\School_2502_Git\DataStructure\Final_Test\P03\P03.c(98,10): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P03\P03.c(99,6): warning C4101: 'index' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P03\P03.c(100,6): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
+  P03.vcxproj -> D:\School\School_2502_Git\DataStructure\Final_Test\x64\Debug\P03.exe

@@ -1,0 +1,4 @@
+﻿  P01.c
+D:\School\School_2502_Git\DataStructure\Final_Test\P01\P01.c(77,10): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'char *'과(와) 다릅니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P01\P01.c(107,4): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  P01.vcxproj -> D:\School\School_2502_Git\DataStructure\Final_Test\x64\Debug\P01.exe

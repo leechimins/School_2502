@@ -45,6 +45,9 @@ element delete_min_heap(HeapType* h) {
     temp = h->heap[(h->heap_size)--];
 
     while (child <= h->heap_size) {
+        // 아래 if문은 없으면 생성되는 허프만 코드 모양이 바뀐다.
+        if ((child < h->heap_size) && (h->heap[child].key > h->heap[child + 1].key))
+            child++;
         if (temp.key < h->heap[child].key)
             break;
         h->heap[parent] = h->heap[child];

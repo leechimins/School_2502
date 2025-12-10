@@ -1,0 +1,7 @@
+﻿  P02.c
+D:\School\School_2502_Git\DataStructure\Final_Test\P02\P02.c(72,11): warning C4101: 'oldKey' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P02\P02.c(70,10): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P02\P02.c(71,6): warning C4101: 'index' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P02\P02.c(72,19): warning C4101: 'newKey' :참조되지 않은 지역 변수입니다.
+D:\School\School_2502_Git\DataStructure\Final_Test\P02\P02.c(72,6): warning C4101: 'key' :참조되지 않은 지역 변수입니다.
+  P02.vcxproj -> D:\School\School_2502_Git\DataStructure\Final_Test\x64\Debug\P02.exe
