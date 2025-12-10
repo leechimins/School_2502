@@ -2,145 +2,120 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 50
 #define TRUE 1
 #define FALSE 0
-int visited[MAX];
+#define MAX_VERTICES 50
 
-typedef struct GraphNode {
-	int vertex;
-	struct GraphNode* link;
-} GraphNode;
+int visited[MAX_VERTICES];
+
+typedef int element;
+typedef struct StackNode {
+    element data;
+    struct StackNode* link;
+} StackNode;
 
 typedef struct {
-	int n;
-	GraphNode* adj_list[MAX];
-} GraphType;
+    StackNode* top;
+} LinkedStackType;
 
-GraphType* create() {
-	return (GraphType*)malloc(sizeof(GraphType));
+void init_stack(LinkedStackType* s) {
+    s->top = NULL;
 }
 
-void init(GraphType* g) {
-	g->n = 0;
-	for (int v = 0; v < MAX; v++)
-		g->adj_list[v] = NULL;
+int is_empty(LinkedStackType* s) {
+    return (s->top == NULL);
+}
+
+void push(LinkedStackType* s, element item) {
+    StackNode* temp = (StackNode*)malloc(sizeof(StackNode));
+    temp->data = item;
+    temp->link = s->top;
+    s->top = temp;
+}
+
+element pop(LinkedStackType* s) {
+    if (is_empty(s)) {
+        fprintf(stderr, "스택이 비어있음\n");
+        exit(1);
+    }
+    else {
+        StackNode* temp = s->top;
+        int data = temp->data;
+        s->top = s->top->link;
+        free(temp);
+        return data;
+    }
+}
+
+typedef struct GraphNode {
+    int vertex;
+    struct GraphNode* link;
+} GraphNode;
+
+typedef struct GraphType {
+    int n;
+    GraphNode* adj_list[MAX_VERTICES];
+} GraphType;
+
+void graph_init(GraphType* g) {
+    g->n = 0;
+    for (int v = 0; v < MAX_VERTICES; v++)
+        g->adj_list[v] = NULL;
 }
 
 void insert_vertex(GraphType* g, int v) {
-	if ((g->n + 1) > MAX) {
-		fprintf(stderr, "그래프 정점 개수 초과");
-		return;
-	}
-	(g->n)++;
+    if (((g->n) + 1) > MAX_VERTICES) return;
+    g->n++;
 }
 
 void insert_edge(GraphType* g, int u, int v) {
-	if (u >= g->n || v >= g->n) {
-		fprintf(stderr, "그래프 정점 번호 오류");
-		return;
-	}
-	GraphNode* node = (GraphNode*)malloc(sizeof(GraphNode));
-	node->vertex = v;
-	node->link = g->adj_list[u];
-	g->adj_list[u] = node;
+    if (u >= g->n || v >= g->n) return;
+    GraphNode* node = (GraphNode*)malloc(sizeof(GraphNode));
+    node->vertex = v;
+    node->link = g->adj_list[u];
+    g->adj_list[u] = node;
 }
 
-void delete_edge(GraphType* g, int u, int v) {
-	if (u >= g->n || v >= g->n) {
-		fprintf(stderr, "그래프 정점 번호 오류");
-		return;
-	}
+void dfs_iterative(GraphType* g, int v) {
+    LinkedStackType s;
+    init_stack(&s);
 
-	GraphNode* node = g->adj_list[u];
-	while (node->link != NULL) {
-		if (node->link->vertex == v) {
-			GraphNode* temp = node->link;
-			node->link = temp->link;
-			free(temp);
-			break;
-		}
-		node = node->link;
-	}
-}
+    push(&s, v);
 
-void read_graph(GraphType* g, char* filename) {
-	int n, u, v;
-
-	FILE* fp = fopen(filename, "r");
-	if (fp == NULL)
-		return;
-
-	fscanf(fp, "%d\n", &n);
-	for (int i = 0; i < n; i++)
-		insert_vertex(g, i);
-
-	while (fscanf(fp, "%d %d\n", &u, &v) != EOF)
-		insert_edge(g, u, v);
-
-	fclose(fp);
-}
-
-void write_graph(GraphType* g, char* filename) {
-	FILE* fp;
-
-	if (filename == NULL)
-		fp = stdout;
-	else {
-		fp = fopen(filename, "w");
-		if (fp == NULL)
-			return;
-	}
-
-	fprintf(fp, "%d\n", g->n);
-	for (int i = 0; i < g->n; i++) {
-		GraphNode* p = g->adj_list[i];
-		printf("정점 %d의 인접 리스트 ", i);
-		while (p != NULL) {
-			printf("-> %d ", p->vertex);
-			p = p->link;
-		}
-		printf("\n");
-	}
-
-	if (filename != NULL)
-		fclose(fp);
-}
-
-void print_adj_mat(GraphType* g) {
-	for (int i = 0; i < g->n; i++) {
-		GraphNode* p = g->adj_list[i];
-		printf("정점 %d의 인접 리스트 ", i);
-		while (p != NULL) {
-			printf("-> %d ", p->vertex);
-			p = p->link;
-		}
-		printf("\n");
-	}
-}
-
-void dfs_list(GraphType* g, int v) {
-	GraphNode* w;
-	visited[v] = TRUE;
-	printf("정점 %d -> ", v);
-	for (w = g->adj_list[v]; w; w = w->link)
-		if (!visited[w->vertex])
-			dfs_list(g, w->vertex);
+    while (!is_empty(&s)) {
+        int current = pop(&s);
+        if (visited[current] == FALSE) {
+            visited[current] = TRUE;
+            printf("%d ", current);
+            for (GraphNode* w = g->adj_list[current]; w != NULL; w = w->link)
+                if (visited[w->vertex] == FALSE)
+                    push(&s, w->vertex);
+        }
+    }
 }
 
 int main(void) {
-	GraphType* g = create();
-	init(g);
+    GraphType g;
+    graph_init(&g);
 
-	read_graph(g, "input.txt");
+    for (int i = 0; i < 5; i++)
+        insert_vertex(&g, i);
 
-	print_adj_mat(g);
-	write_graph(g, NULL);
+    insert_edge(&g, 0, 4);
+    insert_edge(&g, 0, 2);
+    insert_edge(&g, 0, 1);
 
-	printf("\n깊이 우선 탐색(DFS)\n");
-	dfs_list(g, 0);
-	printf("\n");
+    insert_edge(&g, 1, 2);
+    insert_edge(&g, 1, 0);
 
-	free(g);
-	return 0;
+    insert_edge(&g, 2, 4);
+    insert_edge(&g, 2, 3);
+    insert_edge(&g, 2, 0);
+    insert_edge(&g, 2, 1);
+
+    printf("스택 사용 DFS\n");
+    dfs_iterative(&g, 0);
+    printf("\n");
+
+    return 0;
 }

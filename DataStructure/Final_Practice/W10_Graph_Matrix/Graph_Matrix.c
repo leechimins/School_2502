@@ -80,7 +80,8 @@ void write_graph(GraphType* g, char* filename) {
 			if (g->adj_mat[i][j])
 				fprintf(fp, "%d %d\n", i, j);
 
-	fclose(fp);
+	if (filename != NULL)
+		fclose(fp);
 }
 
 void print_adj_mat(GraphType* g) {

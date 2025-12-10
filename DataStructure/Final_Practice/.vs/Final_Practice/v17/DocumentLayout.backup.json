@@ -11,8 +11,24 @@
       "RelativeMoniker": "D:0:0:{A9934289-23B6-4F0C-A494-16594FCA46C1}|W10_DFS_Matrix\\W10_DFS_Matrix.vcxproj|solutionrelative:W10_DFS_Matrix\\DFS_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|solutionrelative:W10_DFS_Iterative\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA9126A0-DD6B-410F-81D7-C8C7ECF14ED7}|W10_DFS_Iterative\\W10_DFS_Iterative.vcxproj|solutionrelative:W10_DFS_Iterative\\DFS_Iterative.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{900524D2-B318-4CFB-889E-1BBEC3593068}|W11_Kruskal\\W11_Kruskal.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal\\Kruskal_Heap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{900524D2-B318-4CFB-889E-1BBEC3593068}|W11_Kruskal\\W11_Kruskal.vcxproj|solutionrelative:W11_Kruskal\\Kruskal_Heap.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F7370B2-B85B-4828-9A98-551140C23538}|W11_Kruskal_List\\W11_Kruskal_List.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_List\\Kruskal_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0F7370B2-B85B-4828-9A98-551140C23538}|W11_Kruskal_List\\W11_Kruskal_List.vcxproj|solutionrelative:W11_Kruskal_List\\Kruskal_List.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94A6E39E-62E4-4302-A143-254C4569B85E}|W11_Kruskal_Matrix\\W11_Kruskal_Matrix.vcxproj|D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_Matrix\\Kruskal_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{94A6E39E-62E4-4302-A143-254C4569B85E}|W11_Kruskal_Matrix\\W11_Kruskal_Matrix.vcxproj|solutionrelative:W11_Kruskal_Matrix\\Kruskal_Matrix.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +38,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DFS_Iterative.c",
               "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c",
               "RelativeDocumentMoniker": "W10_DFS_Iterative\\DFS_Iterative.c",
               "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\DFS_Iterative.c",
               "RelativeToolTip": "W10_DFS_Iterative\\DFS_Iterative.c",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwJEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-08T13:11:24.941Z",
+              "WhenOpened": "2025-12-09T11:31:15.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DFS_List.c",
-              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
-              "RelativeDocumentMoniker": "W10_DFS_List\\DFS_List.c",
-              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
-              "RelativeToolTip": "W10_DFS_List\\DFS_List.c",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAH0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-08T13:04:53.934Z",
+              "DocumentIndex": 2,
+              "Title": "input.txt",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\input.txt",
+              "RelativeDocumentMoniker": "W10_DFS_Iterative\\input.txt",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Iterative\\input.txt",
+              "RelativeToolTip": "W10_DFS_Iterative\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-09T11:31:10.113Z",
               "EditorCaption": ""
             },
             {
@@ -58,10 +74,60 @@
               "RelativeDocumentMoniker": "W10_DFS_Matrix\\DFS_Matrix.c",
               "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_Matrix\\DFS_Matrix.c",
               "RelativeToolTip": "W10_DFS_Matrix\\DFS_Matrix.c",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-12-08T12:51:57.479Z",
+              "WhenOpened": "2025-12-09T11:26:42.014Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DFS_List.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
+              "RelativeDocumentMoniker": "W10_DFS_List\\DFS_List.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W10_DFS_List\\DFS_List.c",
+              "RelativeToolTip": "W10_DFS_List\\DFS_List.c",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAJEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T11:24:48.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Kruskal_Heap.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal\\Kruskal_Heap.c",
+              "RelativeDocumentMoniker": "W11_Kruskal\\Kruskal_Heap.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal\\Kruskal_Heap.c",
+              "RelativeToolTip": "W11_Kruskal\\Kruskal_Heap.c",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv3AAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T05:57:11.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Kruskal_List.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_List\\Kruskal_List.c",
+              "RelativeDocumentMoniker": "W11_Kruskal_List\\Kruskal_List.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_List\\Kruskal_List.c",
+              "RelativeToolTip": "W11_Kruskal_List\\Kruskal_List.c",
+              "ViewState": "AgIAAGgAAAAAAAAAAADwv20AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T05:54:38.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Kruskal_Matrix.c",
+              "DocumentMoniker": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_Matrix\\Kruskal_Matrix.c",
+              "RelativeDocumentMoniker": "W11_Kruskal_Matrix\\Kruskal_Matrix.c",
+              "ToolTip": "D:\\School\\School_2502_Git\\DataStructure\\Final_Practice\\W11_Kruskal_Matrix\\Kruskal_Matrix.c",
+              "RelativeToolTip": "W11_Kruskal_Matrix\\Kruskal_Matrix.c",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-09T05:54:13.604Z"
             }
           ]
         }

@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 50
 #define TRUE 1
 #define FALSE 0
+
+#define MAX 50
+
 int visited[MAX];
 
 typedef struct {
