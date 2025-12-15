@@ -74,7 +74,10 @@ TreeNode* insert_node(TreeNode* node, element key)
 
 TreeNode* replaceMeaning(TreeNode* root, char* word, char* meaning)
 {
-	element key = { word, meaning };
+	element key;
+	strcpy(key.word, word);
+	strcpy(key.meaning, meaning);
+
 	TreeNode* node = search(root, key);
 	if (node == NULL)
 		insert_node(root, key);
@@ -82,7 +85,14 @@ TreeNode* replaceMeaning(TreeNode* root, char* word, char* meaning)
 		strcpy((node->key.meaning), meaning);
 	return root;
 }
-
+/*
+i
+a
+A
+r
+a
+AA
+*/
 //
 void help()
 {
