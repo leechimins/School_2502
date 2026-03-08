@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ddwu.mobile.finalproject.data.Diary
 import ddwu.mobile.finalproject.databinding.ItemDiaryBinding
 
-class DiaryAdapter(var diaries: List<Diary>)
+class DiaryAdapter(var diaries: List<Diary>, val onLongClick: (Diary) -> Unit)
     : RecyclerView.Adapter<DiaryAdapter.DiaryViewHolder>() {
 
     override fun getItemCount(): Int = diaries.size
@@ -34,7 +34,14 @@ class DiaryAdapter(var diaries: List<Diary>)
         holder.diaryBinding.tvItemTitle.text = diary.title
 
         holder.diaryBinding.root.setOnClickListener {
+            val intent = android.content.Intent(holder.itemView.context, AddDiaryActivity::class.java)
+            intent.putExtra("diary_data", diary)
+            holder.itemView.context.startActivity(intent)
+        }
 
+        holder.diaryBinding.root.setOnLongClickListener {
+            onLongClick(diary)
+            true
         }
     }
 

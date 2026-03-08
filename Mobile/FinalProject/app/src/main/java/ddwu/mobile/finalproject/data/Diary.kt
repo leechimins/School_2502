@@ -2,6 +2,7 @@ package ddwu.mobile.finalproject.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(tableName = "diary_table")
 class Diary(
@@ -14,6 +15,6 @@ class Diary(
     var longitude: Double,
     var imgPath: String?,
     var quote: String = ""
-) {
+) : Serializable {
     override fun toString(): String = "[$_id] $title ($date)"
 }
